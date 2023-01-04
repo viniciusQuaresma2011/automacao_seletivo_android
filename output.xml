@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.10 on win32)" generated="20221222 18:10:49.553" rpa="false" schemaversion="3">
+<suite id="s1" name="CriarArtigo" source="c:\Users\Tiziu\Documents\processo_seletivo_app\resources\tests\artigo\CriarArtigo.robot">
+<kw name="Open Session" library="Base" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://0.0.0.0:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Any</arg>
+<arg>app=c:\\Users\\Tiziu\\Documents\\processo_seletivo_app/apks/exemplo.apk</arg>
+<arg>appPackage=//*[@id="screenshotContainer"]/div[2]/div/div/div/div/div[31]/div</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20221222 18:10:50.109" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABED740A0&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto')': /wd/hub/session</msg>
+<msg timestamp="20221222 18:10:50.114" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABEDAA040&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto')': /wd/hub/session</msg>
+<msg timestamp="20221222 18:10:50.116" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABEDAA3D0&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20221222 18:10:50.121" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20221222 18:10:50.119" endtime="20221222 18:10:50.128"/>
+</kw>
+<msg timestamp="20221222 18:10:50.129" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20221222 18:10:50.130" level="FAIL">MaxRetryError: HTTPConnectionPool(host='0.0.0.0', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABEDAA310&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto'))</msg>
+<status status="FAIL" starttime="20221222 18:10:50.092" endtime="20221222 18:10:50.132"/>
+</kw>
+<status status="FAIL" starttime="20221222 18:10:50.076" endtime="20221222 18:10:50.133"/>
+</kw>
+<test id="s1-t1" name="Deve cadastrar um Artigo" line="11">
+<tag>regression</tag>
+<status status="FAIL" starttime="20221222 18:10:50.133" endtime="20221222 18:10:50.135">Parent suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='0.0.0.0', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABEDAA310&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto'))</status>
+</test>
+<kw name="Close Session" library="Base" type="TEARDOWN">
+<kw name="Quit Application" library="AppiumLibrary">
+<doc>Quit application. Application can be quit while Appium session is kept alive.
+This keyword can be used to close application during test case or between test cases.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20221222 18:10:50.139" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20221222 18:10:50.138" endtime="20221222 18:10:50.140"/>
+</kw>
+<msg timestamp="20221222 18:10:50.142" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20221222 18:10:50.144" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20221222 18:10:50.138" endtime="20221222 18:10:50.145"/>
+</kw>
+<status status="FAIL" starttime="20221222 18:10:50.137" endtime="20221222 18:10:50.145">No application is open</status>
+</kw>
+<status status="FAIL" starttime="20221222 18:10:49.560" endtime="20221222 18:10:50.146">Suite setup failed:
+MaxRetryError: HTTPConnectionPool(host='0.0.0.0', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABEDAA310&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto'))
+
+Also suite teardown failed:
+No application is open</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="CriarArtigo">CriarArtigo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221222 18:10:50.109" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABED740A0&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto')': /wd/hub/session</msg>
+<msg timestamp="20221222 18:10:50.114" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABEDAA040&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto')': /wd/hub/session</msg>
+<msg timestamp="20221222 18:10:50.116" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000023ABEDAA3D0&gt;: Failed to establish a new connection: [WinError 10049] O endereço solicitado não é válido no contexto')': /wd/hub/session</msg>
+<msg timestamp="20221222 18:10:50.129" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20221222 18:10:50.142" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
